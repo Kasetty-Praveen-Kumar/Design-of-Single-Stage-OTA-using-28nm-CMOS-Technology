@@ -3,6 +3,20 @@
 # Table of Contents
 [Abstract](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/blob/main/README.md#abstract)
 
+[Introduction](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/blob/main/README.md#introduction)
+
+[Design of OTA](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/edit/main/README.md#design-of-ota)
+
+[Simulation Results](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/edit/main/README.md#simulation-results)
+
+[Netlist](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/edit/main/README.md#netlist)
+
+[Conclusion](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/edit/main/README.md#conclusion)
+
+[Acknowledgment](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/edit/main/README.md#acknowledgment)
+
+[References](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/edit/main/README.md#references)
+
 # Abstract
 <p align="justify">
 In this repository, CMOS-based single-stage operational transconductance amplifier (OTA) is presented with a unity gain bandwidth (UGB) of 30MHz. The CMOS based OTA (CMOSOTA) is designed by sizing (W/L) of the MOSFETs using gm/Id methodology. The mathematical expressions for performance specifications are applied over the graphical models to evaluate the required W/L. Finally, the performance parameters such as DC gain UGB are verified through simulation. This design is implemented using Synopsys Custom Compiler as a part of Cloud Based Analog IC Design Hackathon.
@@ -162,7 +176,7 @@ Fig. 9 and 10 shows the testbench schematic for single ended input (only V2) and
 </p>
 
 <p align="justify">
-From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, the ouput signal amplitude is ≈58mV which results a gain of 11.6. Hence, it can be seen that the gain of the amplifier is same as that of single ended inputs. To verify the UGB of the OTA, AC analysis is performed by sweeping the frequency of the signal form 10Hz to 10GHz. From the Ac analysis, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 13 and Fig. 14 shows the bode plot for the gain of the designed OTA. 
+From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, the ouput signal amplitude is ≈58mV which results a gain of 11.6. Thus, it can be seen that the gain of the amplifier is same as that of single ended inputs. To verify the UGB of the OTA, AC analysis is performed by sweeping the frequency of the signal form 10Hz to 10GHz. From the Ac analysis, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 13 and Fig. 14 shows the bode plot of the OTA deicting the obtained UGB and the open-loop gain, respectively. 
 </p> 
 
 <p align="center">
@@ -186,7 +200,8 @@ The netlist of the simulated circuit can be found here:
 
 # Conclusion
 
-# Acknowledgments
+# Acknowledgment
+
 # REFERENCES
 1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
 2.	M. N. Sabry, H. Omran, M. Dessouky, “Systematic design and optimization of operational transconductance amplifier using gm/Id design methodology,” Microelectronics Journal, vol. 75, pp. 87-96, 2018.
