@@ -197,12 +197,14 @@ The netlist of the simulated circuit can be found here: [netlist](https://github
 <p align="justify">
 The single stage OTA circuit is designed using 28nm CMOS technology with a unity gain bandwidth (UGB) of 30MHz. The  deired W & L values of the MOSFETs are obtained by employing g<sub>m</sub>/I<sub>d</sub> methodology in which the mathematical expressions for the performance specifications are mapped on to the graphical models. The OTA circuit is designed using Synopsys custom compiler, and the functional verification is validated by peforming the transient analysis. From the AC analysis, it is observed that the designed OTA achieves the UGB of 29.3MHz which is nearly equal to the desired specification. In addition, the OTA achieves an open-loop gain of 22dB. 
 </p>
+
 # Acknowledgment
 * [Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)
 * [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
 * [Synopsys India](https://www.synopsys.com/)
 * [Sameer Durgoji, NIT Karnataka](https://in.linkedin.com/in/sameer-s-durgoji-340b26180?trk=public_profile_browsemap)
 * [Chinmaya panda, IIT Hyderabad](https://ee.iith.ac.in/staff.html)
+
 # REFERENCES
 1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
 2.	M. N. Sabry, H. Omran, M. Dessouky, “Systematic design and optimization of operational transconductance amplifier using gm/Id design methodology,” Microelectronics Journal, vol. 75, pp. 87-96, 2018.
