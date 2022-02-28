@@ -20,10 +20,8 @@ The operational transconductance amplifier (OTA) is a voltage controlled current
 The transfer function of the OTA is expressed in terms of the operating point parameters as follows,
      <p align="center">   A<sub>v</sub>(s) = g<sub>m1,2</sub>R<sub>0</sub>/(1+sC<sub>L</sub>R<sub>0</sub>)  </p>     
 where g_{m1,2} is the transconductance of differential amplifier, R_0 is the output resistance and C_L is the load capacitance. The design specifications of OTA are shown in Table 1.
-<p align="center">
-        | Left-Aligned  | Center Aligned  | Right Aligned |
+| Left-Aligned  | Center Aligned  | Right Aligned |
 | :------------ |:---------------:| -----:|
 | col 3 is      | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
-</p>
