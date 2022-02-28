@@ -61,9 +61,56 @@ Substituting the desired values from Table I, yields g<sub>m1,2</sub> ≈ 188.4 
 In similar manner, the W&L values of p-type MOSFET current mirror load are also obtained. Finally, to fix the biasing current (I<sub>d</sub>) through the OTA, a reference current (I<sub>ref</sub>) of 20µA was chosen. The biasing circuit (M6) shown in Fig. 1 mirrors the current to M5 transistor. To get I<sub>d</sub> = 100µA, the W/L ratio of M5 transistor should be five times to that of M6 transistor.  Finally, the OTA is simulated under a supply voltage of 1.8 V (Vdd = 0.9 V, Vss = −0.9 V) with the transistor sizes as shown in Table 2.
 </p>
 
-Table 2 Design Specifications of OTA
+Table 2 W and L values of MOSFETS
 | Transistors       | L(µm)  | W (µm)   |
 | :------------     |:------:| :------: |
 | M<sub>1,2</sub>   | 2      | 60       |
 | M<sub>3,4</sub>   | 3      | 104      |
 | M<sub>5,6</sub>   | 0.03   | 0.1,0.5  |
+
+<p align="justify">
+The OTA is designed with the desired W and L specifications using Synopsys custom compiler tool by creating a libary in the Library manager. Fig. 3 and 4 shows the schematic view and symbol view of the OTA, repectively. The operating point of the OTA is verifed by obtaining the drain currents of all the MOSFETS of OTA through operating point analysis.    
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155974832-e21bb485-f3cc-4709-902b-af0eb00ebe1d.jpg">
+</p>
+
+<p align="center">
+        Fig. 5. Schematic view of the OTA
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155974851-9d6fba7b-9843-4bb0-896d-2c01bab368e2.png">
+</p>
+
+<p align="center">
+        Fig. 6. Symbol of the OTA
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155974620-7579c660-0c7b-4328-948d-c0f96a819cc2.jpg">
+</p>
+
+<p align="center">
+        Fig. 7. Operating Point  Analysis depicting the drain currents flowing through the MOSFETs
+</p>
+
+# Simulation Results
+The transient analysis is carried out using Synopsys Primewave tool to perform the functional verification of the designed OTA. Fig. 5 shows the testbench schematic for single ended input (only V1). Since, the input is applied only to non-inverting terminal of OTA, the output waveform shown in Fig. 6 is in same phase with the input. 
+ 
+ 
+
+Fig. 7 and 8 shows the testbench schematic for single ended input (only V2) and the corresponding output which has 1800 phase shift w.r.t input V2 since it is applied to inverting terminal of OTA. 
+ 
+ 
+Similarly, Fig. 9 and 10 shows the testbench schematic and the output wave form for the case of differential input. If both the inputs V1 and V2 are applied then the phase of output depends on the differential input. If V1>V2 then the output is in same phase with V1, otherwise out of phase with V1.
+ 
+ 
+From the AC analysis simulation, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 11 shows the bode plot of the designed OTA. 
+ 
+ 
+REFERENCES
+1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
+2.	M. N. Sabry, H. Omran, M. Dessouky, “Systematic design and optimization of operational transconductance amplifier using gm/Id design methodology,” Microelectronics Journal, vol. 75, pp. 87-96, 2018.
+3.	C. Fendely, “CMOS exactly solvable chaotic oscillator,” M. S. thesis, Aurburn University, Alabama, Dec. 2019. Accessed on Feb 2022. [Online]. Available: https://etd.auburn.edu/bitstream/handle/10415/6966/CF_Thesis_FinalDraft.pdf?sequence=2. 
