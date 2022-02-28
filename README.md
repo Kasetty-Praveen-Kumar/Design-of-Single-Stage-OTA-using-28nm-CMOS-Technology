@@ -110,7 +110,7 @@ Similarly, Fig. 9 and 10 shows the testbench schematic and the output wave form 
 From the AC analysis simulation, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 11 shows the bode plot of the designed OTA. 
  
  
-REFERENCES
+# REFERENCES
 1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
 2.	M. N. Sabry, H. Omran, M. Dessouky, “Systematic design and optimization of operational transconductance amplifier using gm/Id design methodology,” Microelectronics Journal, vol. 75, pp. 87-96, 2018.
 3.	C. Fendely, “CMOS exactly solvable chaotic oscillator,” M. S. thesis, Aurburn University, Alabama, Dec. 2019. Accessed on Feb 2022. [Online]. Available: https://etd.auburn.edu/bitstream/handle/10415/6966/CF_Thesis_FinalDraft.pdf?sequence=2. 
