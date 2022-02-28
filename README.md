@@ -20,6 +20,7 @@ The operational transconductance amplifier (OTA) is a voltage controlled current
 The transfer function of the OTA is expressed in terms of the operating point parameters as follows,
      <p align="center">   A<sub>v</sub>(s) = g<sub>m1,2</sub>R<sub>0</sub>/(1+sC<sub>L</sub>R<sub>0</sub>)  </p>     
 where  g<sub>m1,2</sub> is the transconductance of differential amplifier, R<sub>0</sub> is the output resistance and C<sub>L</sub> is the load capacitance. The design specifications of OTA are shown in Table 1.
+
 Table 1 Design Specifications of OTA
 | Specifications                | Value |
 | :------------                 |:------|
@@ -49,9 +50,20 @@ Substituting the desired values from Table I, yields g<sub>m1,2</sub> ≈ 188.4 
 </p>
 
 <p align="center">
-    <img width="300" height="300" src="https://user-images.githubusercontent.com/93975942/155971782-c46ab4ab-0c60-49b3-a93a-752fc9e5ad99.png">
+    <img src="https://user-images.githubusercontent.com/93975942/155971782-c46ab4ab-0c60-49b3-a93a-752fc9e5ad99.png">
 </p>
 
 <p align="center">
         Fig. 3. Normalized drain current (I<sub>d</sub>/W) w.r.t (g<sub>m</sub>/I<sub>d</sub>)
 </p>
+
+<p align="justify">
+In similar manner, the W&L values of p-type MOSFET current mirror load are also obtained. Finally, to fix the biasing current (I<sub>d</sub>) through the OTA, a reference current (I<sub>ref</sub>) of 20µA was chosen. The biasing circuit (M6) shown in Fig. 1 mirrors the current to M5 transistor. To get I<sub>d</sub> = 100µA, the W/L ratio of M5 transistor should be five times to that of M6 transistor.  Finally, the OTA is simulated under a supply voltage of 1.8 V (Vdd = 0.9 V, Vss = −0.9 V) with the transistor sizes as shown in Table 2.
+</p>
+
+Table 2 Design Specifications of OTA
+| Specifications                | Value |
+| :------------                 |:------|
+| UGB                           | 30MHz |
+| Reference Current (Iref)      | 20µA  |
+| Load Capacitor                | 1pF   |
