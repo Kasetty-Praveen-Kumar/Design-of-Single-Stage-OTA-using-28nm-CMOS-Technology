@@ -192,7 +192,7 @@ From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, t
 The netlist of the simulated circuit can be found here: [netlist](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/blob/main/Netlist.txt)
 
 # Conclusion
-sad
+The single stage OTA circuit is designed using 28nm CMOS technology with a unity gain bandwidth (UGB) of 30MHz. The  deired W & L values of the MOSFETs are obtained by employing g<sub>m</sub>/I<sub>d</sub> methodology in which the mathematical expressions for the performance specifications are mapped on to the graphical models. The OTA circuit is designed using Synopsys custom compiler, and the functional verification is validated by pefroming the transient analysis. From the AC analysis, it is observed that the designed OTA achieves the UGB of 29.3MHz which is nearly equalt to the desired specification. In addition, the OTA achieves an open-loop gain of 22dB. 
 # Acknowledgment
 * [Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)
 * [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
