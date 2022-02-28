@@ -189,7 +189,7 @@ From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, t
 </p>
 
 # Netlist
-The netlist of the simulated circuit can be found here:
+The netlist of the simulated circuit can be found here: [netlist](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/blob/main/Netlist.txt)
 
 # Conclusion
 
