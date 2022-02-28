@@ -192,9 +192,9 @@ From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, t
 The netlist of the simulated circuit can be found here: [netlist](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/blob/main/Netlist.txt)
 
 # Conclusion
-
+sad
 # Acknowledgment
-
+adss
 # REFERENCES
 1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
 2.	M. N. Sabry, H. Omran, M. Dessouky, “Systematic design and optimization of operational transconductance amplifier using gm/Id design methodology,” Microelectronics Journal, vol. 75, pp. 87-96, 2018.
