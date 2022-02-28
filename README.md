@@ -8,3 +8,4 @@ In this repository, CMOS-based single-stage operational transconductance amplifi
 <p align="justify">
 The operational transconductance amplifier (OTA) is a voltage controlled current source whose output current is proportional to differential input voltage [1-3]. Fig. 1 shows the schematic of single stage OTA comprises a differential amplifier, and a current mirror circuit to fix the biasing current.
 </p>
+![Circuit diagram of OTA](https://user-images.githubusercontent.com/93975942/155959692-d12bf538-2a49-4b57-a000-4cccd1cefe36.png)
