@@ -109,6 +109,22 @@ The transient analysis is carried out using Synopsys Primewave tool to perform t
 Fig. 7 and 8 shows the testbench schematic for single ended input (only V2) and the corresponding output which has 1800 phase shift w.r.t input V2 since it is applied to inverting terminal of OTA. 
 <p> 
 
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155991309-5ee8a228-a7d1-4536-a19d-cd3025c11d2c.png">
+</p>
+
+<p align="center">
+        Fig. 7. Testbench for transient analysis with single ended input (only V1)
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155991265-38c24573-b3f4-4538-9a97-738e94c7414e.png">
+</p>
+
+<p align="center">
+        Fig. 8. Transient analysis ouput with single ended input V1
+</p>
+
 <p align="justify">
     czv
 </p>
