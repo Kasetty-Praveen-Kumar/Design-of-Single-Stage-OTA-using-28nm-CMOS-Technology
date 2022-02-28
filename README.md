@@ -101,18 +101,25 @@ The OTA is designed with the desired W and L specifications using Synopsys custo
 </p>
 
 # Simulation Results
+<p align="justify">
 The transient analysis is carried out using Synopsys Primewave tool to perform the functional verification of the designed OTA. Fig. 5 shows the testbench schematic for single ended input (only V1). Since, the input is applied only to non-inverting terminal of OTA, the output waveform shown in Fig. 6 is in same phase with the input. 
+<p> 
  
- 
-
+<p align="justify">
 Fig. 7 and 8 shows the testbench schematic for single ended input (only V2) and the corresponding output which has 1800 phase shift w.r.t input V2 since it is applied to inverting terminal of OTA. 
- 
- 
+<p> 
+
+<p align="justify">
+    czv
+</p>
+
+<p align="justify">
 Similarly, Fig. 9 and 10 shows the testbench schematic and the output wave form for the case of differential input. If both the inputs V1 and V2 are applied then the phase of output depends on the differential input. If V1>V2 then the output is in same phase with V1, otherwise out of phase with V1.
- 
- 
+</p> 
+
+<p align="justify">
 From the AC analysis simulation, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 11 shows the bode plot of the designed OTA. 
- 
+</p> 
  
 # REFERENCES
 1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
