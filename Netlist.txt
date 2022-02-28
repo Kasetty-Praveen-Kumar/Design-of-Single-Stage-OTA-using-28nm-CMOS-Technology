@@ -1,0 +1,149 @@
+* Netlist for transient analysis
+
+*  Generated for: PrimeSim
+*  Design library name: cp_lib1
+*  Design cell name: OTA_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Mon Feb 28 13:54:28 2022
+
+.global gnd!
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : OTA
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt ota v1 v2 vout
+xm5 net51 net51 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net52 net51 vss vss n105 w=0.5u l=0.03u nf=5 m=1
+xm1 net71 v1 net52 vss n105 w=60u l=2u nf=30 m=1
+xm0 vout v2 net52 vss n105 w=60u l=2u nf=30 m=1
+xm3 net71 net71 net98 net98 p105 w=0.104000m l=3.0u nf=52 m=1
+xm2 vout net71 net98 net98 p105 w=0.104000m l=3.0u nf=52 m=1
+i25 net98 net51 dc=20u
+v53 net98 gnd! dc=0.9
+v54 gnd! vss dc=0.9
+.ends ota
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : OTA_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 v1 v2 vout ota
+c1 vout gnd! c=1p
+v3 net12 gnd! dc=0.55
+v2 net13 gnd! dc=0.55
+v9 v1 net12 dc=0 ac=10m sin ( 0 10m 100K 0 0 0 )
+v10 v2 net13 dc=0 ac=10m sin ( 0 5m 100K 0 0 0 )
+
+
+
+
+
+
+
+
+.tran '0.1u' '500u' name=tran
+.dcOP
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(v1) v(v2) v(vout)
+.probe dc v(v1) v(v2) v(vout)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
+
+
+* Netlist for AC Analysis
+
+*  Generated for: PrimeSim
+*  Design library name: cp_lib1
+*  Design cell name: OTA_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Mon Feb 28 14:00:40 2022
+
+.global gnd!
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : OTA
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt ota v1 v2 vout
+xm5 net51 net51 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net52 net51 vss vss n105 w=0.5u l=0.03u nf=5 m=1
+xm1 net71 v1 net52 vss n105 w=60u l=2u nf=30 m=1
+xm0 vout v2 net52 vss n105 w=60u l=2u nf=30 m=1
+xm3 net71 net71 net98 net98 p105 w=0.104000m l=3.0u nf=52 m=1
+xm2 vout net71 net98 net98 p105 w=0.104000m l=3.0u nf=52 m=1
+i25 net98 net51 dc=20u
+v53 net98 gnd! dc=0.9
+v54 gnd! vss dc=0.9
+.ends ota
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : OTA_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 v1 v2 vout ota
+c1 vout gnd! c=1p
+v3 v1 gnd! dc=0.55
+v2 net13 gnd! dc=0.55
+v10 v2 net13 dc=0 ac=10m sin ( 0 5m 100K 0 0 0 )
+
+
+
+
+
+
+
+
+.ac dec '100' '10' '10G' name=ac
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe ac v(v2) v(vout)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
