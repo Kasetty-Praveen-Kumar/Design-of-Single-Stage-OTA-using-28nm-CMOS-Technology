@@ -62,8 +62,8 @@ In similar manner, the W&L values of p-type MOSFET current mirror load are also 
 </p>
 
 Table 2 Design Specifications of OTA
-| Specifications                | Value |
-| :------------                 |:------|
-| UGB                           | 30MHz |
-| Reference Current (Iref)      | 20µA  |
-| Load Capacitor                | 1pF   |
+| Transistors       | L(µm)  | W (µm)   |
+| :------------     |:------:| :------: |
+| M<sub>1,2</sub>   | 2      | 60       |
+| M<sub>3,4</sub>   | 3      | 104      |
+| M<sub>5,6</sub>   | 0.03   | 0.1,0.5  |
