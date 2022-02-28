@@ -162,9 +162,31 @@ Fig. 9 and 10 shows the testbench schematic for single ended input (only V2) and
 </p>
 
 <p align="justify">
-From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, the ouput signal amplitude is ≈58mV which results a gain of 11.6. Hence, it can be seen that the gain of the amplifier is same as that of single ended inputs. To validate the  From the AC analysis simulation, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 11 shows the bode plot of the designed OTA. 
+From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, the ouput signal amplitude is ≈58mV which results a gain of 11.6. Hence, it can be seen that the gain of the amplifier is same as that of single ended inputs. To verify the UGB of the OTA, AC analysis is performed by sweeping the frequency of the signal form 10Hz to 10GHz. From the Ac analysis, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 13 and Fig. 14 shows the bode plot for the gain of the designed OTA. 
 </p> 
- 
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155997078-1b785721-f2c9-4de2-8d33-a248d957bb9e.jpg">
+</p>
+
+<p align="center">
+        Fig. 11. Bode plot depicting the UGB of the single stage OTA
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155997310-db4e24e4-d56d-4be0-ac1d-27365a3e681a.jpg">
+</p>
+
+<p align="center">
+        Fig. 12. Bode plot depicting the open-loop gain of the single stage OTA
+</p>
+
+# Netlist
+The netlist of the simulated circuit can be found here:
+
+# Conclusion
+
+# Acknowledgments
 # REFERENCES
 1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
 2.	M. N. Sabry, H. Omran, M. Dessouky, “Systematic design and optimization of operational transconductance amplifier using gm/Id design methodology,” Microelectronics Journal, vol. 75, pp. 87-96, 2018.
