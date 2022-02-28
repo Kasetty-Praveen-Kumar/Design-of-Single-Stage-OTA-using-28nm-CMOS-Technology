@@ -93,7 +93,7 @@ The OTA is designed with the desired W and L specifications using Synopsys custo
 </p>
 
 <p align="center">
-    [7]<img src="https://user-images.githubusercontent.com/93975942/155974620-7579c660-0c7b-4328-948d-c0f96a819cc2.jpg">
+    <img src="https://user-images.githubusercontent.com/93975942/155974620-7579c660-0c7b-4328-948d-c0f96a819cc2.jpg">
 </p>
 
 <p align="center">
