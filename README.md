@@ -73,7 +73,7 @@ Table 2 W and L values of MOSFETS
 | M<sub>5,6</sub>   | 0.03   | 0.1,0.5  |
 
 <p align="justify">
-The OTA is designed with the desired W and L specifications using Synopsys custom compiler tool by creating a libary in the Library manager. Fig. 3 and 4 shows the schematic view and symbol view of the OTA, repectively. The operating point of the OTA is verifed by obtaining the drain currents of all the MOSFETS of OTA through operating point analysis.    
+The OTA is designed with the desired W and L specifications using Synopsys custom compiler tool by creating a libary in the Library manager. Fig. 4 and 5 shows the schematic view and symbol view of the OTA, repectively. The operating point of the OTA is verifed by obtaining the drain currents of all the MOSFETS of OTA through operating point analysis.    
 </p>
 
 <p align="center">
@@ -81,7 +81,7 @@ The OTA is designed with the desired W and L specifications using Synopsys custo
 </p>
 
 <p align="center">
-        Fig. 5. Schematic view of the OTA
+        Fig. 4. Schematic view of the OTA
 </p>
 
 <p align="center">
@@ -89,7 +89,7 @@ The OTA is designed with the desired W and L specifications using Synopsys custo
 </p>
 
 <p align="center">
-        Fig. 6. Symbol of the OTA
+        Fig. 5. Symbol of the OTA
 </p>
 
 <p align="center">
@@ -97,16 +97,12 @@ The OTA is designed with the desired W and L specifications using Synopsys custo
 </p>
 
 <p align="center">
-        Fig. 7. Operating Point  Analysis depicting the drain currents flowing through the MOSFETs
+        Fig. 6. Operating Point  Analysis depicting the drain currents flowing through the MOSFETs
 </p>
 
 # Simulation Results
 <p align="justify">
-The transient analysis is carried out using Synopsys Primewave tool to perform the functional verification of the designed OTA. Fig. 5 shows the testbench schematic for single ended input (only V1). Since, the input is applied only to non-inverting terminal of OTA, the output waveform shown in Fig. 6 is in same phase with the input. 
-<p> 
- 
-<p align="justify">
-Fig. 7 and 8 shows the testbench schematic for single ended input (only V2) and the corresponding output which has 1800 phase shift w.r.t input V2 since it is applied to inverting terminal of OTA. 
+The transient analysis is carried out using Synopsys Primewave tool to perform the functional verification of the designed OTA. Fig. 7 shows the testbench schematic for single ended input (only V1). Since, the input is applied only to non-inverting terminal of OTA, the output waveform shown in Fig. 8 is in same phase with the input. 
 <p> 
 
 <p align="center">
@@ -126,15 +122,47 @@ Fig. 7 and 8 shows the testbench schematic for single ended input (only V2) and 
 </p>
 
 <p align="justify">
-    czv
+Fig. 9 and 10 shows the testbench schematic for single ended input (only V2) and the corresponding output which has 1800 phase shift w.r.t input V2 since it is applied to inverting terminal of OTA. 
+<p> 
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155991309-5ee8a228-a7d1-4536-a19d-cd3025c11d2c.png">
+</p>
+
+<p align="center">
+        Fig. 9. Testbench for transient analysis with single ended input (only V2)
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155991265-38c24573-b3f4-4538-9a97-738e94c7414e.png">
+</p>
+
+<p align="center">
+        Fig. 10. Transient analysis ouput with single ended input V2
 </p>
 
 <p align="justify">
-Similarly, Fig. 9 and 10 shows the testbench schematic and the output wave form for the case of differential input. If both the inputs V1 and V2 are applied then the phase of output depends on the differential input. If V1>V2 then the output is in same phase with V1, otherwise out of phase with V1.
-</p> 
+    From the Fig. 8 and Fig. 10, it can be observed that for an input voltage of 10mV, the OTA amplifies the input signal to 120 mV. Thus, the open-loop gain obtained from the designed OTA is A<sub>v</sub> = V<sub>out</sub>/V<sub>in</sub> = 12. In dB scale, A<sub>v</sub>(dB) = 20*log(A<sub>v</sub>) = 22 dB. Similarly, Fig. 11 and 12 shows the testbench schematic and the output wave form for the case of differential input. If both the inputs V1 and V2 are applied then the phase of output depends on the differential input. If V1>V2 then the output is in same phase with V1, otherwise out of phase with V1. 
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155993909-02c30609-1b81-4c12-987c-17c81e50d019.png">
+</p>
+
+<p align="center">
+        Fig. 11. Testbench for transient analysis with differential input (both V1 and V2)
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155993957-35a5b892-0456-4f4d-8a01-64369258f193.jpg">
+</p>
+
+<p align="center">
+        Fig. 12. Transient analysis ouput with differential input (both V1 and V2)
+</p>
 
 <p align="justify">
-From the AC analysis simulation, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 11 shows the bode plot of the designed OTA. 
+From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, the ouput signal amplitude is ≈58mV which results a gain of 11.6. Hence, it can be seen that the gain of the amplifier is same as that of single ended inputs. To validate the  From the AC analysis simulation, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 11 shows the bode plot of the designed OTA. 
 </p> 
  
 # REFERENCES
