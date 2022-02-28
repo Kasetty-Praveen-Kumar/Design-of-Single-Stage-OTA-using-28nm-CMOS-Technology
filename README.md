@@ -194,7 +194,11 @@ The netlist of the simulated circuit can be found here: [netlist](https://github
 # Conclusion
 sad
 # Acknowledgment
-adss
+* [Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)
+* [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
+* [Synopsys India](https://www.synopsys.com/)
+* [Sameer Durgoji, NIT Karnataka]
+* [Chinmay panda, IIT Hyderabad]
 # REFERENCES
 1.	R. U. Ahmed, E. A. Vijaykumar, and P. Saha, “Single-stage operational transconductance amplifier design in UTBSOI technology based on gm/id methodology,” ELECTRONICS, vol. 23, no. 2, 2019.
 2.	M. N. Sabry, H. Omran, M. Dessouky, “Systematic design and optimization of operational transconductance amplifier using gm/Id design methodology,” Microelectronics Journal, vol. 75, pp. 87-96, 2018.
