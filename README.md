@@ -28,9 +28,11 @@ The operational transconductance amplifier (OTA) is a voltage controlled current
         Fig. 1. Schematic of Single Stage OTA [1]
 </p>
 
+<p align="justify">
 The transfer function of the OTA is expressed in terms of the operating point parameters as follows,
      <p align="center">   A<sub>v</sub>(s) = g<sub>m1,2</sub>R<sub>0</sub>/(1+sC<sub>L</sub>R<sub>0</sub>)  </p>     
 where  g<sub>m1,2</sub> is the transconductance of differential amplifier, R<sub>0</sub> is the output resistance and C<sub>L</sub> is the load capacitance. The design specifications of OTA are shown in Table 1.
+</p>
 
 Table 1 Design Specifications of OTA
 | Specifications                | Value |
@@ -80,7 +82,7 @@ Table 2 W and L values of MOSFETS
 | M<sub>5,6</sub>   | 0.03   | 0.1,0.5  |
 
 <p align="justify">
-The OTA is designed with the desired W and L specifications using Synopsys custom compiler tool by creating a libary in the Library manager. Fig. 4 and 5 shows the schematic view and symbol view of the OTA, repectively. The operating point of the OTA is verifed by obtaining the drain currents of all the MOSFETS of OTA through operating point analysis.    
+The OTA is designed with the desired W and L specifications using Synopsys custom compiler tool by creating a libary in the Library manager. Fig. 4 and 5 shows the schematic view and symbol view of the OTA, respectively. The operating point of the OTA is verifed by obtaining the drain currents of all the MOSFETS of OTA through operating point analysis.    
 </p>
 
 <p align="center">
@@ -129,7 +131,7 @@ The transient analysis is carried out using Synopsys Primewave tool to perform t
 </p>
 
 <p align="justify">
-Fig. 9 and 10 shows the testbench schematic for single ended input (only V2) and the corresponding output which has 1800 phase shift w.r.t input V2 since it is applied to inverting terminal of OTA. 
+Fig. 9 and 10 shows the testbench schematic for single ended input (only V2) and the corresponding output has 180<sup>0</sup> phase shift w.r.t input V2 since it is applied to inverting terminal of OTA. 
 <p> 
 
 <p align="center">
@@ -169,7 +171,7 @@ Fig. 9 and 10 shows the testbench schematic for single ended input (only V2) and
 </p>
 
 <p align="justify">
-From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, the ouput signal amplitude is ≈58mV which results a gain of 11.6. Thus, it can be seen that the gain of the amplifier is same as that of single ended inputs. To verify the UGB of the OTA, AC analysis is performed by sweeping the frequency of the signal form 10Hz to 10GHz. From the Ac analysis, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 13 and Fig. 14 shows the bode plot of the OTA deicting the obtained UGB and the open-loop gain, respectively. 
+From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, the ouput signal amplitude is ≈58mV which results a gain of 11.6. Thus, it can be seen that the gain of the amplifier is same as that of single ended inputs. To verify the UGB of the OTA, AC analysis is performed by sweeping the frequency of the input sinusoidal signal fromm 10Hz to 10GHz. From the AC analysis, the UGB of the OTA is found to be 29.3 MHz with the gain of 22dB. Fig. 13 and Fig. 14 shows the bode plot of the OTA depicting the obtained UGB and the open-loop gain, respectively. 
 </p> 
 
 <p align="center">
@@ -192,7 +194,9 @@ From Fig. 12 it can be observed that, for a differential input (V1-V2) of 5mV, t
 The netlist of the simulated circuit can be found here: [netlist](https://github.com/Kasetty-Praveen-Kumar/Design-of-Single-Stage-OTA-using-28nm-CMOS-Technology/blob/main/Netlist.txt)
 
 # Conclusion
-The single stage OTA circuit is designed using 28nm CMOS technology with a unity gain bandwidth (UGB) of 30MHz. The  deired W & L values of the MOSFETs are obtained by employing g<sub>m</sub>/I<sub>d</sub> methodology in which the mathematical expressions for the performance specifications are mapped on to the graphical models. The OTA circuit is designed using Synopsys custom compiler, and the functional verification is validated by pefroming the transient analysis. From the AC analysis, it is observed that the designed OTA achieves the UGB of 29.3MHz which is nearly equalt to the desired specification. In addition, the OTA achieves an open-loop gain of 22dB. 
+<p align="justify">
+The single stage OTA circuit is designed using 28nm CMOS technology with a unity gain bandwidth (UGB) of 30MHz. The  deired W & L values of the MOSFETs are obtained by employing g<sub>m</sub>/I<sub>d</sub> methodology in which the mathematical expressions for the performance specifications are mapped on to the graphical models. The OTA circuit is designed using Synopsys custom compiler, and the functional verification is validated by peforming the transient analysis. From the AC analysis, it is observed that the designed OTA achieves the UGB of 29.3MHz which is nearly equal to the desired specification. In addition, the OTA achieves an open-loop gain of 22dB. 
+</p>
 # Acknowledgment
 * [Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)
 * [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
