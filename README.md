@@ -24,7 +24,7 @@ Table 1 Design Specifications of OTA
 | Specifications                | Value |
 | :------------                 |:------|
 | UGB                           | 30MHz |
-| Reference Current (Iref)      | 20uA  |
+| Reference Current (Iref)      | 20µA  |
 | Load Capacitor                | 1pF   |
 
 # Design of OTA
@@ -43,3 +43,15 @@ In this design, gm/Id methodology is employed to evaluate the sizing of the MOS 
 
 The desired frequency response of the OTA is obtained based on the unity gain bandwidth (UGB) parameter as below,
      <p align="center">   UGB = g<sub>m1,2</sub>/(2&pi;C<sub>L</sub>R<sub>0</sub>)  </p>     
+
+<p align="justify">
+Substituting the desired values from Table I, yields g<sub>m1,2</sub> ≈ 188.4 µS. The biasing current (I<sub>d</sub>) of OTA is set to 100µA in this design. This provides the limit on required g<sub>m</sub>/I<sub>d</sub> ≈ 3.8 S/A. The desired W value of the n-type MOSFETs in differential pair is obtained by plotting the I<sub>d</sub>/W w.r.t g<sub>m</sub>/I<sub>d</sub> for a channel length of L=2µm as shown in Fig. 3 and then map the obtained gm/Id value on the Id/W plot.  This yields a current density ≈ 0.86µA/µm, thus the width is given by W<sub>1,2</sub> = I<sub>d1,2</sub>/(I<sub>d</sub>/W) ≈ 60µm.
+</p>
+
+<p align="center">
+    <img width="300" height="300" src="https://user-images.githubusercontent.com/93975942/155971782-c46ab4ab-0c60-49b3-a93a-752fc9e5ad99.png">
+</p>
+
+<p align="center">
+        Fig. 3. Normalized drain current (I<sub>d</sub>/W) w.r.t (g<sub>m</sub>/I<sub>d</sub>)
+</p>
