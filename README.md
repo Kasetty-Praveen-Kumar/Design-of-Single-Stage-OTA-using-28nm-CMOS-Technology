@@ -19,9 +19,27 @@ The operational transconductance amplifier (OTA) is a voltage controlled current
 
 The transfer function of the OTA is expressed in terms of the operating point parameters as follows,
      <p align="center">   A<sub>v</sub>(s) = g<sub>m1,2</sub>R<sub>0</sub>/(1+sC<sub>L</sub>R<sub>0</sub>)  </p>     
-where g_{m1,2} is the transconductance of differential amplifier, R_0 is the output resistance and C_L is the load capacitance. The design specifications of OTA are shown in Table 1.
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
+where  g<sub>m1,2</sub> is the transconductance of differential amplifier, R<sub>0</sub> is the output resistance and C<sub>L</sub> is the load capacitance. The design specifications of OTA are shown in Table 1.
+Table 1 Design Specifications of OTA
+| Specifications                | Value |
+| :------------                 |:------|
+| UGB                           | 30MHz |
+| Reference Current (Iref)      | 20uA  |
+| Load Capacitor                | 1pF   |
+
+# Design of OTA
+<p align="justify">
+In this design, gm/Id methodology is employed to evaluate the sizing of the MOS transistors. The Vdd and Vss are set to +0.9V and -0.9V, respectively. The DC simulation is performed on the both n-type and p-type MOSFETs by varying gate-to-source voltage (Vgs) from +0.3 to +1.8V. Since, three MOSFETs are stacked in OTA (see Fig.1), the drain-to-source voltage is set to (Vdd-Vss)/3 for the DC simulation. To avoid the short-channel effects, the transistor width (W) is set to 10µm [1, 2]. A finger width of 2µm is assumed, thus all widths are selected as multiples of 2µm. In general, OTAs use long channel length (L) in order to achieve high DC gain [1-3], so L = 2µm has been used in this design. The DC analysis is performed to obtain the MOS parameters such as Id, gm, gds, Vgs, Vth etc. These values are exported to .csv file and plotted using MATLAB.
+</p>
+
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/93975942/155969269-02a10da8-b57c-4280-a2c2-7d2002dbe1f1.png">
+</p>
+
+<p align="center">
+        Fig. 2. DC Analysis Results of NMOS Transistor
+</p>
+
+The desired frequency response of the OTA is obtained based on the unity gain bandwidth (UGB) parameter as below,
+     <p align="center">   UGB = g<sub>m1,2</sub>/(2&pi;C<sub>L</sub>R<sub>0</sub>)  </p>     
